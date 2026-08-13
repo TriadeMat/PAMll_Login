@@ -70,7 +70,7 @@
             android:backgroundTint="#706A6A"
             app:cornerRadius="5dp"/>
     </LinearLayout>
-        <CheckBox
+        <CheckBox android:id="@+id/box"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lembrar Minhas Credenciais"
