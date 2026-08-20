@@ -7,26 +7,17 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
- <TextView
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:gravity="center"
-     android:layout_margin="50dp"
-     android:text="Cadastro"
-     android:textSize="48sp"
-     android:textColor="#63CEC4"
-     android:textStyle="bold"
-     />
-    <EditText android:id="@+id/edt_nome"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:background="@drawable/borda"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
-        android:hint="Informe seu nome: "
+        android:gravity="center"
+        android:layout_margin="50dp"
+        android:text= "Login"
+        android:textSize="48sp"
+        android:textColor="#63CEC4"
+        android:textStyle="bold"
         />
     <EditText android:id="@+id/edt_email"
         android:layout_width="match_parent"
@@ -51,34 +42,34 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <Button android:id="@+id/btn_voltar"
+        <Button android:id="@+id/btn_entrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            android:text="VOLTAR"
+            android:text="ENTRAR"
             android:padding="15dp"
             android:textColor="@color/white"
             android:backgroundTint="#63CEC4"
             app:cornerRadius="5dp"/>
-        <Button android:id="@+id/btn_cadastrar"
+        <Button android:id="@+id/btn_Novo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            android:text="CADASTRAR"
+            android:text="NOVO USUARIO"
+            android:textColor="@color/white"
             android:padding="15dp"
             android:backgroundTint="#999999"
-            android:textColor="@color/white"
             app:cornerRadius="5dp"/>
     </LinearLayout>
-        <CheckBox android:id="@+id/box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lembrar Minhas Credenciais"
-            android:textColor="@color/black"
-            android:buttonTint="@color/black"
-            android:layout_marginStart="15dp"/>
+    <CheckBox android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lembrar Minhas Credenciais"
+        android:textColor="@color/black"
+        android:buttonTint="@color/black"
+        android:layout_marginStart="15dp"/>
 
 
 </LinearLayout>

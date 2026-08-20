@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#333232"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -16,7 +16,7 @@
         android:layout_margin="50dp"
         android:text="Tela Principal"
         android:textSize="48sp"
-        android:textColor="#FFFFFF"
+        android:textColor= "#63CEC4"
         android:textStyle="bold"
         />
         <Button android:id="@+id/btn_logoff"
@@ -27,7 +27,8 @@
             android:text="LOGOFF"
             android:padding="15dp"
             android:textSize="24sp"
-            android:backgroundTint="#009688"
+
+            android:backgroundTint="#63CEC4"
             app:cornerRadius="5dp"/>
 
 

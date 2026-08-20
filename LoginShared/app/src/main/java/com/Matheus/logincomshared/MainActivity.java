@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     EditText nome, email, senha;
-    Button entrar,novo;
+    Button cadastrar,voltar;
     CheckBox lembrar;
     SharedPreferences preferences;
 
@@ -26,30 +26,33 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+       preferences = getSharedPreferences("login", 0);
+
         initComponents();
 
-        entrar.setOnClickListener(new View.OnClickListener() {
+        cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(validarDados()){
                     if(lembrar.isChecked()){
-                        preferences = getSharedPreferences("login", 0);
+
                         SharedPreferences.Editor dados = preferences.edit();
                         dados.putString("Nome", nome.getText().toString());
                         dados.putString("Email", email.getText().toString());
                         dados.putString("Senha", senha.getText().toString());
+                        dados.apply();
+                        nome.setText("");
+                        email.setText("");
+                        senha.setText("");
 
+                        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                        startActivity(intent);
                     }
                 }
             }
         });
 
-        nome.setText("");
-        email.setText("");
-        senha.setText("");
 
-        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-        startActivity(intent);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -79,8 +82,8 @@ public class MainActivity extends AppCompatActivity {
        nome    = findViewById(R.id.edt_nome);
        email   = findViewById(R.id.edt_email);
        senha   = findViewById(R.id.edt_senha);
-       entrar  = findViewById(R.id.btn_entrar);
-       novo    = findViewById(R.id.btn_Novo);
+       cadastrar  = findViewById(R.id.btn_cadastrar);
+       voltar    = findViewById(R.id.btn_voltar);
        lembrar = findViewById(R.id.box);
     }
 }
