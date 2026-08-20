@@ -28,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
        preferences = getSharedPreferences("login", 0);
 
+       if (preferences.contains("nome")){
+           Intent intent = new Intent(MainActivity.this,
+                   HomeActivity.class);
+           startActivity(intent);
+       }
         initComponents();
 
         cadastrar.setOnClickListener(new View.OnClickListener() {
