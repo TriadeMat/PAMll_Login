@@ -84,11 +84,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initComponents() {
-       nome    = findViewById(R.id.edt_nome);
-       email   = findViewById(R.id.edt_email);
-       senha   = findViewById(R.id.edt_senha);
+       nome    = findViewById(R.id.cad_nome);
+       email   = findViewById(R.id.cad_email);
+       senha   = findViewById(R.id.cad_senha);
        cadastrar  = findViewById(R.id.btn_cadastrar);
        voltar    = findViewById(R.id.btn_voltar);
-       lembrar = findViewById(R.id.box);
+       lembrar = findViewById(R.id.cad_box);
     }
 }

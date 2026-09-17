@@ -19,7 +19,7 @@
      android:textColor="#63CEC4"
      android:textStyle="bold"
      />
-    <EditText android:id="@+id/edt_nome"
+    <EditText android:id="@+id/cad_nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp"
@@ -28,7 +28,7 @@
         android:layout_marginStart="20dp"
         android:hint="Informe seu nome: "
         />
-    <EditText android:id="@+id/edt_email"
+    <EditText android:id="@+id/cad_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp"
@@ -38,7 +38,7 @@
         android:layout_marginTop="20dp"
         android:hint="Informe seu email: "
         />
-    <EditText android:id="@+id/edt_senha"
+    <EditText android:id="@+id/cad_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp"
@@ -72,7 +72,7 @@
             android:textColor="@color/white"
             app:cornerRadius="5dp"/>
     </LinearLayout>
-        <CheckBox android:id="@+id/box"
+        <CheckBox android:id="@+id/cad_box"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lembrar Minhas Credenciais"
